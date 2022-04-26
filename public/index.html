@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-teal-600">
+    <main>
+        <div class="mx-auto max-w-6xl mt-10 rounded-lg overflow-hidden">
+            <div class="bg-[url('../public/images/background.jpg')] bg-cover shadow-2xl shadow-black min-h-[600px]">
+
+                <div class="mx-auto grid grid-cols-6 gap-3 p-10">
+                    <div class="flex justify-center items-center">
+                        <div class="bg-slate-200 rounded-full w-[70px] mx-4">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/6.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-white font-bold text-xl">Cấp độ: <span>1</span></p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center col-span-1">
+                        <p class="text-white font-bold text-xl">
+                            <p class="text-white font-bold text-xl">Điểm: </p>
+                            <p class="text-white font-bold text-xl" id="point1">0</p>
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center col-span-2">
+                        <div class="grid grid-rows-2 gap-4">
+                            <div class="mx-auto grid grid-cols-2 gap-2">
+                                <!-- <div class="flex justify-center items-center">
+                                    <div class="bg-white rounded-full p-2 w-[40px]">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png" alt="">
+                                    </div>
+                                </div> -->
+                                <div class="flex justify-center items-center">
+                                    <div class="bg-white rounded-full p-2 w-[40px]">
+                                        <img id="reload" src="https://www.freeiconspng.com/thumbs/restart-icon/black-panel-restart-system-icon--6.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <div class="bg-white rounded-full p-2 w-[40px]">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Mute_Icon.svg/2048px-Mute_Icon.svg.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="
+                                relative
+                                rounded-md
+                                border-slate-100
+                                w-[300px] h-9 bg-white
+                            ">
+                            <div id="heal" style="width: 100%;" class="transition duration-150 ease-out absolute t-0 l-0 h-9 bg-gradient-to-r from-purple-500 to-pink-500 rounded-md"></div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    
+                    <div class="flex justify-center items-center col-span-1">
+                        <p class="text-white font-bold  text-xl">
+                            <p class="text-white font-bold text-xl">Điểm: </p>
+                            <p class="text-white font-bold text-xl" id="point2">0</p>
+                        </p>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div>
+                            <p class="text-white font-bold text-xl">Cấp độ: <span>1</span></p>
+                        </div>
+                        <div class="bg-slate-200 rounded-full w-[70px] mx-4">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-max mx-auto ">
+                    <button id="findMatch" class="py-[15px] px-[45px] bg-amber-500 text-xl font-bold ">Tìm trận</button>
+                </div>
+                <div class="px-28 pb-28 grid grid-cols-10 gap-3" id="listPokemon">
+                    
+                </div>
+            </div>
+          
+        </div>
+    </main>
+    <style>
+        .active{
+            border-radius: 10px;
+            border: inset red;
+        }
+    </style>
+      <!-- <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+      <script>
+          const socket = io('http://localhost:3000/')
+      </script> -->
+    <script type="module" src="../dist/app.js"></script>
+</body>
+</html>
